@@ -39,10 +39,10 @@
                                         <a class="nav-link" href="shop.php">Post a Property</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="shop.php">Login</a>
+                                        <a class="nav-link" href="{{ route('login')}}">Login</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="shop.php">Sign Up</a>
+                                        <a class="nav-link" href="{{ route('register')}}">Sign Up</a>
                                     </li>
                             
                                 </ul>

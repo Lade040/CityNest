@@ -1,6 +1,6 @@
 <div class="row bottom-nav ">
     <div class="col-md-2">
-        <a class="navbar-brand ps-5 bold-white" href="index.php"><i class="fa-solid fa-city"></i>&nbsp;CityNest</a>
+        <a class="navbar-brand ps-5 bold-white" href="{{ route('index')}}"><i class="fa-solid fa-city"></i>&nbsp;CityNest</a>
     </div>
     <div class="col-lg-2 bottom-nav-col">
         <a href="#" class="bold-white">About Us</a>
