@@ -26,3 +26,6 @@ Route::get('/register', function (){
 Route::get('/user',function(){
     return view('user_form');
 })->name('user');;
+Route::get('/agent-list',function(){
+    return view('agent_list');
+})->name('agent-list');
