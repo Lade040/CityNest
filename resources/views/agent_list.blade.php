@@ -1,6 +1,8 @@
-@include('partials/nav')
+ @include('partials/nav')
 
+        
 
+    <div class="container-fluid">
         {{-- Search section --}}
         <div class="row search-section-agent justify-content-center">
 
@@ -33,19 +35,40 @@
         </div>
 
         <div class="row justify-content-center agent-section">
-            <div class="col-10">
+            <div class="col-10 agent-div">
                 <div class="row">
-                    <div class="col-2">
+                    <div class="col-5">
                         <img src="{{ asset('assets/images/hero4.jpg') }}" alt="properties" class="img-fluid">
-                        <div>
-                            <a href="" class="btn ">View agent</a>
+                        <div class="d-grid gap-2 col mx-auto mt-3">
+                            <a href="" class="btn custom-btn">View agent</a>
                         </div>
                     </div>
-                    <div class="col-6">
-                        <h3>Agent Name</h3>
+                    <div class="col-5">
+                        <h3 class="bold">Agent's Name</h3>
                         <p> Agent's address</p>
                         <p>Date registered</p>
+                        <p>Agent's contact</p>
                     </div>
+
+                </div>
+            </div>
+            <div class="col-10 agent-div">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="{{ asset('assets/images/hero4.jpg') }}" alt="properties" class="img-fluid">
+                        <div class="d-grid gap-2 col mx-auto mt-3">
+                            <a href="" class="btn custom-btn">View agent</a>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <h3 class="bold">Agent's Name</h3>
+                        <p> Agent's address</p>
+                        <p>Date registered</p>
+                        <p>Agent's contact</p>
+                    </div>
+
+                </div>
+            </div>
 
                 </div>
             </div>
@@ -55,7 +78,9 @@
         @include('partials/bottom_nav')
 
         {{-- footer --}}
-        @include('partials/footer')
+        @include('partials/footer') 
+
+    </div>
     </body>
     <script src="assets/bootstrap/js/bootstrap.js"></script>
 </html>

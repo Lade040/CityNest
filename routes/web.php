@@ -29,3 +29,18 @@ Route::get('/user',function(){
 Route::get('/agent-list',function(){
     return view('agent_list');
 })->name('agent-list');
+Route::get('/shortlet', function(){
+    return view('shortlet');
+})->name('shortlet');
+Route::get('/userdash', function(){
+    return view('user_dash');
+})->name('user_dash');
+Route::get('/userprofile', function(){
+    return view('user_profile');
+})->name('user_profile');
+Route::get('/landlorddash', function(){
+    return view('landlord_dash');
+})->name('landlord_dash');
+Route::get('/layout', function(){
+    return view('layouts/other_dashboard');
+})->name('layout');
