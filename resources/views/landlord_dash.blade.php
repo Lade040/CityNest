@@ -5,16 +5,15 @@
 @endsection()
 
 @section("dash_side")
-    <div class="row">
-        <div class="greeting-section">
-            <h3><button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">
-                    <i class="fa-solid fa-bars"></i>
-                </span>
-            </button>Hello username</h3>
+    <div class="row greeting-section">
+        <div class="col-10 ">
+            <h3>Hello username</h3>
+            
+        </div>
+        <div class="col-2 text-end">
+            <i class="fa-solid fa-bars" hidden></i>
         </div>
     </div>
-    
 
     <div class="row">
         <div class="d-grid gap-2 col-11 mx-auto">

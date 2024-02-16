@@ -19,9 +19,7 @@
                         <div class="container-fluid px-0">
                             <a class="navbar-brand ps-5" href="index.php"><i class="fa-solid fa-city"></i>&nbsp;CityNest</a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon">
-                                <i class="fa-solid fa-bars"></i>
-                            </span>
+                            <span class="navbar-toggler-icon"></span>
                             </button>
                             <div class="collapse navbar-collapse justify-content-end pe-4   custom-navbar" id="navbarSupportedContent">
                                 <ul class="navbar-nav  mb-2 mb-lg-0 ">

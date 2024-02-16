@@ -233,6 +233,10 @@
     color: #ffffff;
     font-weight: 700;
 }
+.bold-orange{
+    color: #EE6C4D;
+    font-weight: 700;
+}
 /* bottom nav */
 .bottom-nav{
     background-color: #533B4D;
@@ -393,9 +397,12 @@
     margin-top: 20px;
 }
 /* Landlord, Agent, Developer dashboard */
+.other-user-dash{
+    max-height: 1000px;
+}
 .other-dash-nav{
     background-color: #f2f1f1;
-    max-height: 600px;
+    min-height: 500px;
 }
 .other-dash-nav h3{
     padding-top: 15px;
@@ -429,12 +436,18 @@
 .other-dash-side{
    margin-left: 0px;
 }
-
+.nav-banner{
+    background-color: #533B4D;
+}
+.nav-banner a{
+    text-decoration: none;
+}
 .greeting-section{
     background-color: #533B4D;
     color: #ffffff;
     padding: 20px;
 }
+
 .post-btn{
     background-color: #EE6C4D;
     padding: 12px;
@@ -502,9 +515,59 @@
    max-width: 16.7%;
    margin: 0 2px;
 }
+/* other users profile */
+.customised-active{
+    background-color: #e1dfdf;
+    padding-top: 5px;
+    padding-bottom: 5px; 
 
-
-
+}
+.customised-active a{
+    text-decoration: none;
+    color: #533B4D; 
+}
+.customised{
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    border: 1px solid white;
+}
+.customised:hover{
+    background-color: #e1dfdf;
+}
+.customised a{
+    text-decoration: none;
+    color: #ffffff; 
+    font-size: 1em;
+}
+.customised a:hover{
+    color: #533B4D; 
+}
+.profile-details{
+    margin-top: 40px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.fa-pen-to-square{
+    font-size: 2em;
+}
+.nav-banner{
+    display:none ;
+}
+.team-members{
+    border-bottom: 1px solid black;
+}
+.create-team{
+    margin-bottom: 10px;
+}
+.custom-border{
+    border-right: 1px solid black;  
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
 @media screen and (min-width: 290px) and (max-width: 991px) {
     /* .other-dash-nav{
         display: none;
@@ -540,5 +603,18 @@
     .dash-listings{
         margin-bottom: 30px;
     }
-    
+    .other-dash-nav{
+        display: none;
+    }
+    .other-dash-side{
+        flex-basis: 100%;
+        max-width: 100%;
+       
+    }
+    .btn-toggle{
+        display: block;
+    }
+    .nav-banner{
+        display: block;
+    }
 }

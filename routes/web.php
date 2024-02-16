@@ -44,3 +44,12 @@ Route::get('/landlorddash', function(){
 Route::get('/layout', function(){
     return view('layouts/other_dashboard');
 })->name('layout');
+Route::get('/profile', function(){
+    return view('profile');
+})->name('profile');
+Route::get('/teammembers', function(){
+    return view('team_members');
+})->name('team_members');
+Route::get('/editteam', function(){
+    return view('edit_team');
+})->name('edit_team');
