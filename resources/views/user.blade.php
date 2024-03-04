@@ -52,7 +52,7 @@
                     <div class="col mt-5">
                         <p class="bold-purple">By clicking on "Sign Up" you confirm that you agree to our website <a href="" class="link">Terms of use</a></p>
                     </div>
-                    
+
                 </div>
                 <div class="d-grid gap-2 col mx-auto">
                     <input type="submit" name="sign_up" id="sign_up" value="Sign Up" class="btn btn-large  custom-btn">
