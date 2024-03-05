@@ -15,7 +15,7 @@
         <div class="container-fluid nav-container">
             <!-- Navbar Section -->
 
-                    <nav class="navbar navbar-expand-lg bg-body-tertiary" >
+                    {{-- <nav class="navbar navbar-expand-lg bg-body-tertiary" >
                         <div class="container-fluid px-0">
                             <a class="navbar-brand ps-5" href="index.php"><i class="fa-solid fa-city"></i>&nbsp;CityNest</a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,7 +49,7 @@
 
                             </div>
                         </div>
-                  </nav>
+                  </nav> --}}
 
     {{-- nav --}}
     @include('partials/nav')
@@ -78,25 +78,24 @@
                 </div>
 
             </div>
-            <div class="col-lg-2 col-md-5 role-box">
+            {{-- <div class="col-lg-2 col-md-5 role-box">
                 <div class="text-center">
                     <img src="{{ asset('assets/images/landlord.jpg') }}" alt="landlord" class="img-fluid role-image">
                     <p class="bold-purple">Landlord</p>
                     <a href="{{route('user')}}" class="btn custom-btn">Get started</a>
                 </div>
-            </div>
-            <div class="col-lg-2 col-md-5 col-sm-8 role-box">
+            </div> --}}
+            {{-- <div class="col-lg-2 col-md-5 col-sm-8 role-box">
                 <div class="text-center">
                     <img src="{{ asset('assets/images/agent.jpg') }}" alt="agent" class="img-fluid">
                     <p class="bold-purple">Agents</p>
                     <a href="{{route('user')}}" class="btn custom-btn">Get started</a>
                 </div>
-            </div>
+            </div> --}}
             <div class="col-lg-2 col-md-5 col-sm-8 role-box">
                 <div class="text-center">
                     <img src="{{ asset('assets/images/developer.jpg') }}" alt="developer" class="img-fluid">
-                    <p class="bold-purple">Developer</p>
-                    <a href="{{route('user')}}" class="btn custom-btn">Get started</a>
+                    <p class="bold-purple">Landlord</p>
                     <a href="{{ route('show_lad_register') }}" class="btn custom-btn">Get started</a>
                 </div>
             </div>
@@ -124,9 +123,6 @@
 
 
         </div>
-{{-- =======
->>>>>>> parent of f71d960 (Merge branch 'dev' into vic_CityNest) --}}
-
     </body>
     <script src="assets/bootstrap/js/bootstrap.js"></script>
 </html>
