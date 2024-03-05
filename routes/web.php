@@ -1,49 +1,42 @@
 <?php
 
-// use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LadController;
 
-use App\Http\Controllers\AdminController;
-use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/', [HomeController::class, "index"])->name('index');
+Route::get('/about', function(){ return 'about'; })->name('index');
 
-Route::get('/redirects', [HomeController::class, "redirects"])->name('redirects');
+Route::get('/', function(){ return view('index'); })->name('index');
 
-// FETCH USER ROUTE
-Route::get('/users', [AdminController::class, "user"]);
+Route::get('/login', function(){ return view('login'); })->name('login');
 
-//DELETE USER ROUTE USING GET
-Route::get('/deleteuser/{id}', [AdminController::class, "deleteuser"])->name('deleteuser');
+Route::get('/register', function(){ return view('register'); })->name('register');
 
-//DELETE USER ROUTE USING A FORM
-Route::delete('/deleteuser/{id}', [AdminController::class, 'destroy'])->name('deleteuser');
+Route::get('/user', function(){ return view('user'); })->name('user');
 
+Route::get('/agent-list', function(){ return view('agent_list'); })->name('agent-list');
 
-// Route::get('/', function () { return view('index'); })->name('index');
+Route::get('/show_lad_register', [LadController::class, 'showLadRegForm'])->name('show_lad_register');
 
-Route::get('/login', function (){ return view('login'); })->name('login');
+Route::post('/lad_register', [LadController::class, 'lad_register'])->name('lad_register');
 
-Route::get('/register', function (){ return view('register'); })->name('register');
+Route::get('/show_lad_login', [LadController::class, 'showLadLoginForm'])->name('show_lad_login');
 
-Route::get('/user',function(){ return view('user_form'); })->name('user');
+Route::post('/lad_login', [LadController::class, 'LadLoginForm'])->name('lad_login');
 
-Route::get('/agent-list',function(){ return view('agent_list'); })->name('agent-list');
+Route::get('/lad_home', [LadController::class, 'showLadDashboard'])->name('lad_home');
 
-Route::get('/shortlet', function(){ return view('shortlet'); })->name('shortlet');
+// routes/web.php
+Route::post('/logout', 'Auth\LoginController@logout')->name('logout');
 
-Route::get('/userdash', function(){ return view('user_dash'); })->name('user_dash');
-
-Route::get('/userprofile', function(){ return view('user_profile'); })->name('user_profile');
-
-Route::get('/landlorddash', function(){ return view('landlord_dash'); })->name('landlord_dash');
-
-Route::get('/layout', function(){  return view('layouts/other_dashboard'); })->name('layout');
-
-Route::get('/profile', function(){ return view('profile'); })->name('profile');
-
-Route::get('/teammembers', function(){ return view('team_members'); })->name('team_members');
-
-Route::get('/editteam', function(){ return view('edit_team'); })->name('edit_team');
+Route::middleware([
+    'auth:sanctum',
+    config('jetstream.auth_session'),
+    'verified',
+])->group(function () {
+    Route::get('/dashboard', function () {
+        return view('dashboard');
+    })->name('dashboard');
+});

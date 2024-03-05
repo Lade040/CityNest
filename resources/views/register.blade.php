@@ -51,9 +51,10 @@
                         </div>
                   </nav>
 
+    {{-- nav --}}
+    @include('partials/nav')
 
         </div>
-    <div class="container-fluid">
         {{-- sign up --}}
         <div class=" row signup">
 
@@ -69,7 +70,7 @@
             </div>
         </div> --}}
         <div class="row justify-content-around role-section">
-            <div class="col-lg-2 col-md-5 col-sm-8 role-box">
+            <div class="col-lg-2 col-md-5 role-box">
                 <div class="text-center">
                     <img src="{{ asset('assets/images/user.jpg') }}" alt="" class="img-fluid">
                     <p class="bold-purple">User</p>
@@ -77,7 +78,7 @@
                 </div>
 
             </div>
-            <div class="col-lg-2 col-md-5 col-sm-8 role-box">
+            <div class="col-lg-2 col-md-5 role-box">
                 <div class="text-center">
                     <img src="{{ asset('assets/images/landlord.jpg') }}" alt="landlord" class="img-fluid role-image">
                     <p class="bold-purple">Landlord</p>
@@ -96,6 +97,21 @@
                     <img src="{{ asset('assets/images/developer.jpg') }}" alt="developer" class="img-fluid">
                     <p class="bold-purple">Developer</p>
                     <a href="{{route('user')}}" class="btn custom-btn">Get started</a>
+                    <a href="{{ route('show_lad_register') }}" class="btn custom-btn">Get started</a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-5 role-box">
+                <div class="text-center">
+                    <img src="{{ asset('assets/images/agent.jpg') }}" alt="agent" class="img-fluid">
+                    <p class="bold-purple">Agents</p>
+                    <a href="{{ route('show_lad_register') }}" class="btn custom-btn">Get started</a>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-5 role-box">
+                <div class="text-center">
+                    <img src="{{ asset('assets/images/developer.jpg') }}" alt="developer" class="img-fluid">
+                    <p class="bold-purple">Developer</p>
+                    <a href="{{ route('show_lad_register') }}" class="btn custom-btn">Get started</a>
                 </div>
             </div>
         </div>
@@ -105,12 +121,11 @@
 
         {{-- footer --}}
             @include('partials/footer')
-<<<<<<< HEAD
 
-=======
 
         </div>
->>>>>>> dev
+{{-- =======
+>>>>>>> parent of f71d960 (Merge branch 'dev' into vic_CityNest) --}}
 
     </body>
     <script src="assets/bootstrap/js/bootstrap.js"></script>
