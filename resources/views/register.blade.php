@@ -76,8 +76,8 @@
                     <p class="bold-purple">User</p>
                     <a href="{{route('user')}}" class="btn custom-btn">Get started</a>
                 </div>
-
             </div>
+
             {{-- <div class="col-lg-2 col-md-5 role-box">
                 <div class="text-center">
                     <img src="{{ asset('assets/images/landlord.jpg') }}" alt="landlord" class="img-fluid role-image">
@@ -92,6 +92,7 @@
                     <a href="{{route('user')}}" class="btn custom-btn">Get started</a>
                 </div>
             </div> --}}
+            
             <div class="col-lg-2 col-md-5 col-sm-8 role-box">
                 <div class="text-center">
                     <img src="{{ asset('assets/images/developer.jpg') }}" alt="developer" class="img-fluid">

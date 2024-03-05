@@ -63,7 +63,6 @@ class LadController extends Controller
             return redirect('/lad_home')->with('success', 'User login successfully.');
 
         }
-
         // Authentication failed, redirect back with an error message
         return redirect()->back()->withInput($request->only('email'))->withErrors(['email' => 'Invalid credentials']);
     }
