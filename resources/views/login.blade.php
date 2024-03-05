@@ -54,38 +54,41 @@
               
         </div>
         {{-- sign in form --}}
-        <div class=" row login justify-content-center">
-            <div class="col-5 login-side text-center">
-                <h1>Welcome Back</h1>
-            </div>
-            <div class="col-5 form-section">
-                <div class="row text-center login-text">
-                    <div class="col">
-                        <h1 class="white">Log In</h1>
-                    </div>
+        <div class="container-fluid">
+
+        
+            <div class="row login justify-content-center">
+                <div class="col-md-5 login-side text-center">
+                    <h1>Welcome Back</h1>
                 </div>
-
-                <div class="row login-input ">
-                    <form action="" method="">
-                    <div class="col">
-                        <input type="text" class="form-control mb-3" placeholder="Email">
-
-                        <input type="password" class="form-control mb-3" placeholder="Password">
-                        <div class="text-end mb-3">
-                            <p><a href="#" class=" white link">Forgot Password?</a></p>
+                <div class="col-md-5 form-section">
+                    <div class="row text-center login-text">
+                        <div class="col">
+                            <h1 class="white">Log In</h1>
                         </div>
-                        
+                    </div>
 
-                        <div class="d-grid gap-2 col mx-auto">
-                            <input type="submit" name="login_btn" id="login" value="Login" class="btn btn-large  custom-btn">
-                        </div>
+                    <div class="row login-input ">
+                        <form action="" method="">
+                        <div class="col">
+                            <input type="text" class="form-control mb-3" placeholder="Email">
+
+                            <input type="password" class="form-control mb-3" placeholder="Password">
+                            <div class="text-end mb-3">
+                                <p><a href="#" class=" white link">Forgot Password?</a></p>
+                            </div>
+                            
+
+                            <div class="d-grid gap-2 col mx-auto">
+                                <input type="submit" name="login_btn" id="login" value="Login" class="btn btn-large  custom-btn">
+                            </div>
+                            
                         
-                       
-                    </div> 
-                </form>
+                        </div> 
+                    </form>
+                </div>
+                
             </div>
-            
-        </div>
             
             
     </div>
@@ -95,6 +98,7 @@
     {{-- footer --}}
         @include('partials/footer')
        
+    </div>
     </body>
     <script src="assets/bootstrap/js/bootstrap.js"></script>
 </html>

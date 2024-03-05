@@ -1,17 +1,21 @@
 @font-face {
-    font-family: "Poppins-regular";
-    src: url(../fonts/Poppins/Poppins-Regular.ttf)format(ttf);
+    font-family: "Poppins-Regular";
+    src: url('../fonts/Poppins/Poppins-Regular.ttf')format('truetype');
 }
 
 @font-face {
-    font-family: "Poppins-bold";
-    src: url(../fonts/Poppins/Poppins-Bold.ttf)format(ttf);
+    font-family: "Poppins-Bold";
+    src: url('../fonts/Poppins/Poppins-Bold.ttf')format('truetype');
+}
+@font-face {
+    font-family: "Poppins-Light";
+    src: url('../fonts/Poppins/Poppins-Light.ttf')format('truetype');
 }
 
 *{
     margin: 0px;
     padding: 0px;
-    font-family: "Poppins-regular", sans-serif;
+    font-family: "Poppins-Regular", sans-serif;
     font-weight: 500;
 }
 
@@ -26,7 +30,7 @@
 }
 .navbar .navbar-brand{
     color: white;
-    font-family: "Poppins-bold", sans-serif;
+    font-family: "Poppins-Bold", sans-serif;
     font-weight: 700;
 }
 .navbar-toggler-icon{
@@ -34,7 +38,7 @@
 }
 .navbar-collapse ul li a{
     color: white;
-    font-family: "Poppins-bold", sans-serif;
+    font-family: "Poppins-Bold", sans-serif;
     font-weight: 500;
 }
 
@@ -45,6 +49,9 @@
 .fa-city{
     color: white;
 }
+.fa-bars{
+    color: #ffffff;
+}
 .search-section{
     min-height: 500px;
     background-image: url("../images/hero-image.jpg");
@@ -53,7 +60,6 @@
     background-attachment: fixed;
     width: 100%;
     position: relative;
-    border: 2px solid red;
 }
 .search-section::before{
     content: "";
@@ -96,9 +102,7 @@
     color: #533B4D;
     font-weight: 700;
 }
-/* .search-option option{
-    background-color: #ffffff !important;
-} */
+
 .search-btn{
     margin-top: 20px;
 }
@@ -117,6 +121,9 @@
     margin-top: 80px;
     margin-bottom: 80px;
 }
+.featured{
+    margin-bottom: 35px;
+}
 /* Login */
 .login-body{
     background-image: url("../images/hero-image3.jpg");
@@ -129,17 +136,17 @@
     min-height: 400px;
 }
 .login-side{
-    background: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255,255,255,0.2);
     border-radius: 8px 0px 0px 8px;
 }
 .login-side h1{
     color: #ffffff;
-    font-family: "Poppins-bold" ,sans-serif;
+    font-family: "Poppins-Bold" ,sans-serif;
     font-weight: 800;
     padding-top: 150px;
 }
 .form-section{
-    background-color: #ffffff;
+    background-color: #252020;
     border-radius:0px 8px 8px 0px ;
 }
 .login-text{
@@ -172,6 +179,9 @@
     color: #EE6C4D;
 }
 /* sign up */
+.reg-body{
+    background-color: #e1dfdf;
+}
 .signup-body{
     background-color: rgba(83,59,77, 0.2);
 }
@@ -223,6 +233,10 @@
     color: #ffffff;
     font-weight: 700;
 }
+.bold-orange{
+    color: #EE6C4D;
+    font-weight: 700;
+}
 /* bottom nav */
 .bottom-nav{
     background-color: #533B4D;
@@ -259,6 +273,7 @@
     padding-left: 30px;
 }
 /* Register form */
+
 .reg-form{
    margin-top: 80px;
    margin-bottom: 80px;
@@ -322,20 +337,284 @@
 .test{
     border: 2px solid red;
 }
+.agent-section{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.agent-div{
+    border: 2px solid #533B4D;
+    padding: 25px;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+/* dashboard */
+.dashboard{
+    min-height: 420px;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.dash-nav{
+    margin-top: 5px;
+    background-color: #f2f1f1;
+    border-radius: 8px;
+    padding: 30px;
+    max-height: 380px;
+}
+.dash-nav h3{
+    margin-bottom: 60px;
+}
+.dash-nav h3 a{
+    text-decoration: none;
+}
+.dash-nav h3 a:hover{
+    color: #533B4D;
+}
+.dash-nav ul{
+    padding-left: 0px;
+}
+.dash-nav ul li{
+    list-style: none;
+    margin-top: 20px;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+.dash-nav ul li i{
+    color: #533B4D;
+    font-weight: 400;
+    font-size: 1.2em;
+    padding-right: 5px;
+}
+.dash-nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+.dash-side{
+    padding-top: 25px;
+    margin-right: 100px;
+}
+.dash-side div{
+    margin-top: 20px;
+}
+/* Landlord, Agent, Developer dashboard */
+.other-user-dash{
+    max-height: 1000px;
+}
+.other-dash-nav{
+    background-color: #f2f1f1;
+    min-height: 500px;
+}
+.other-dash-nav h3{
+    padding-top: 15px;
+    margin-bottom: 40px;
+}
+.other-dash-nav h3 a{
+    text-decoration: none;
+}
+.other-dash-nav h3 a:hover{
+    color: #533B4D;
+}
+.other-dash-nav ul{
+    padding-left: 0px;
+}
+.other-dash-nav ul li{
+    padding-left: 10px;
+    list-style: none;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+.other-dash-nav ul li i{
+    color: #533B4D;
+    font-size: 1em;
+    padding-right: 5px;
+}
+.other-dash-nav ul li a{
+    font-family: "Poppins-Light";
+    text-decoration: none;
+    color: black;
+}
+.other-dash-side{
+   margin-left: 0px;
+}
+.nav-banner{
+    background-color: #533B4D;
+}
+.nav-banner a{
+    text-decoration: none;
+}
+.greeting-section{
+    background-color: #533B4D;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.post-btn{
+    background-color: #EE6C4D;
+    padding: 12px;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.post-btn:hover{
+    background-color: #EE6C4D;
+    color: #ffffff;
+}
+.dash-content{
+    margin-top: 40px;
+    color: #5a5555;
+}
+.dash-listings{
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 30px;
+}
+.list-link{
+    margin-right: 10px;
+}
+.list-link a{
+    color: #533B4D;
+    text-decoration: none;
+}
+.list-link i {
+    font-size: 3.5vw;
+}
+.list-link p{
+    margin-top: 15px;
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+.listings-info{
+    border-left: 2px solid #9e9a9a;
+}
+
+.listings-info p{
+    font-size: 0.9vw;
+    line-height: 0.6;
+    font-weight: 700;
+}
+.listing-view{
+    border-radius: 5px;
+    height: 70px;
+    background-color: #533B4D;
+    padding-top: 15px;
+    
+}
+.listing-view a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.listing-view p{
+    font-size: 1vw;
+}
+
+.custom-col{
+    flex-basis: 16.7%;
+   max-width: 16.7%;
+   margin: 0 2px;
+}
+/* other users profile */
+.customised-active{
+    background-color: #e1dfdf;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+
+}
+.customised-active a{
+    text-decoration: none;
+    color: #533B4D; 
+}
+.customised{
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    border: 1px solid white;
+}
+.customised:hover{
+    background-color: #e1dfdf;
+}
+.customised a{
+    text-decoration: none;
+    color: #ffffff; 
+    font-size: 1em;
+}
+.customised a:hover{
+    color: #533B4D; 
+}
+.profile-details{
+    margin-top: 40px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.fa-pen-to-square{
+    font-size: 2em;
+}
+.nav-banner{
+    display:none ;
+}
+.team-members{
+    border-bottom: 1px solid black;
+}
+.create-team{
+    margin-bottom: 10px;
+}
+.custom-border{
+    border-right: 1px solid black;  
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
 @media screen and (min-width: 290px) and (max-width: 991px) {
-  
+    /* .other-dash-nav{
+        display: none;
+    } */
     .role-box{
-        margin-bottom: 50px;
+        margin-bottom: 130px;
+    }
+    .search-section{
+        min-height: 600px;
     }
     .search-section::before{
         content: "";
         position: absolute;
         top:80px ;
-        left:90px ;
+        left:50px ;
         width: 85%;
-        height: 70%;
+        height: 86%;
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 1;
     }
+    .search-title{
+        margin-top: 100px;
+        margin-bottom: 30px;
+    }
+    .btn-search{
+        justify-content: end;
+    }
+    .login-side h1{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 
+    .dash-listings{
+        margin-bottom: 30px;
+    }
+    .other-dash-nav{
+        display: none;
+    }
+    .other-dash-side{
+        flex-basis: 100%;
+        max-width: 100%;
+       
+    }
+    .btn-toggle{
+        display: block;
+    }
+    .nav-banner{
+        display: block;
+    }
 }
