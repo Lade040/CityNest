@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('first_name');
             $table->string('last_name');
             $table->string('email')->unique();
+            $table->boolean('user_type')->default(0);
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->string('phone', 20);
@@ -35,4 +36,5 @@ return new class extends Migration
     {
         Schema::dropIfExists('users');
     }
+    
 };

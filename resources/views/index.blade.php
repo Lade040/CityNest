@@ -33,10 +33,10 @@
                             <label class="btn category-selection" for="land">Land</label>
                         </div>
                     </div>
-                    
+
                         <div class="row g-0">
                             <div class="col-md-4 ">
-                            <input class="form-control search-option" type="search" placeholder="Where's your dream house" aria-label="Search"> 
+                            <input class="form-control search-option" type="search" placeholder="Where's your dream house" aria-label="Search">
                             </div>
                             <div class="col-md-2">
                                 <select name="type" id="" class="form-control search-option">
@@ -61,9 +61,9 @@
                             <div class="col-md-4 search-btn ms-auto">
                                 <button class="btn btn-outline-success btn-search" type="submit"><i class="fa-solid fa-magnifying-glass"></i> &nbsp; Search</button>
                             </div>
-                            
+
                         </div>
-                        
+
                     </form>
                 </div>
         </div>
@@ -72,7 +72,7 @@
             <div class="col-10">
                 <h5 class="bold-purple mb-5 ps-5">Featured Properties</h5>
             </div>
-            
+
             <div class="col-md-5 col-lg-3 featured">
                 <img src="{{ asset('assets/images/hero4.jpg') }}" alt="properties" class="img-fluid">
             </div>
@@ -87,7 +87,7 @@
         @include('partials/bottom_nav')
 
         {{-- footer --}}
-        @include('partials/footer')    
+        @include('partials/footer')
     </div>
     </body>
     <script src="assets/bootstrap/js/bootstrap.js"></script>
