@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-    {{-- nav --}}
-    @include('partials/nav')
-
-=======
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +14,7 @@
     <body class="reg-body">
         <div class="container-fluid nav-container">
             <!-- Navbar Section -->
-            
+
                     <nav class="navbar navbar-expand-lg bg-body-tertiary" >
                         <div class="container-fluid px-0">
                             <a class="navbar-brand ps-5" href="index.php"><i class="fa-solid fa-city"></i>&nbsp;CityNest</a>
@@ -49,15 +44,14 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="{{ route('register')}}">Sign Up</a>
                                     </li>
-                            
+
                                 </ul>
-                        
+
                             </div>
                         </div>
                   </nav>
 
-              
->>>>>>> dev
+
         </div>
     <div class="container-fluid">
         {{-- sign up --}}
@@ -87,38 +81,22 @@
                 <div class="text-center">
                     <img src="{{ asset('assets/images/landlord.jpg') }}" alt="landlord" class="img-fluid role-image">
                     <p class="bold-purple">Landlord</p>
-<<<<<<< HEAD
-                    <a href="{{ route('show_lad_register') }}" class="btn custom-btn">Get started</a>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-5 role-box">
-                <div class="text-center">
-                    <img src="{{ asset('assets/images/agent.jpg') }}" alt="agent" class="img-fluid">
-                    <p class="bold-purple">Agents</p>
-                    <a href="{{ route('show_lad_register') }}" class="btn custom-btn">Get started</a>
-=======
                     <a href="{{route('user')}}" class="btn custom-btn">Get started</a>
                 </div>
             </div>
             <div class="col-lg-2 col-md-5 col-sm-8 role-box">
-                <div class="text-center"> 
+                <div class="text-center">
                     <img src="{{ asset('assets/images/agent.jpg') }}" alt="agent" class="img-fluid">
                     <p class="bold-purple">Agents</p>
                     <a href="{{route('user')}}" class="btn custom-btn">Get started</a>
->>>>>>> dev
                 </div>
             </div>
             <div class="col-lg-2 col-md-5 col-sm-8 role-box">
                 <div class="text-center">
                     <img src="{{ asset('assets/images/developer.jpg') }}" alt="developer" class="img-fluid">
                     <p class="bold-purple">Developer</p>
-<<<<<<< HEAD
-                    <a href="{{ route('show_lad_register') }}" class="btn custom-btn">Get started</a>
-                </div>
-=======
                     <a href="{{route('user')}}" class="btn custom-btn">Get started</a>
-                </div>  
->>>>>>> dev
+                </div>
             </div>
         </div>
 
@@ -130,8 +108,8 @@
 <<<<<<< HEAD
 
 =======
-        
-        </div> 
+
+        </div>
 >>>>>>> dev
 
     </body>
