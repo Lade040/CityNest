@@ -24,7 +24,7 @@ Route::get('/register', function (){
     return view('register');
 })->name('register');
 Route::get('/user',function(){
-    return view('user_form');
+    return view('user');
 })->name('user');;
 Route::get('/agent-list',function(){
     return view('agent_list');
@@ -50,6 +50,6 @@ Route::get('/profile', function(){
 Route::get('/teammembers', function(){
     return view('team_members');
 })->name('team_members');
-Route::get('/editteam', function(){
-    return view('edit_team');
-})->name('edit_team');
+Route::get('/editprofile', function(){
+    return view('edit_profile');
+})->name('edit_profile');

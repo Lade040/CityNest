@@ -13,7 +13,7 @@
             <a href="{{route('team_members')}}" class="">Team Members</a>
         </div>
         <div class="col-3 customised">
-            <a href="{{route('edit_team')}}" class="">Edit Profile</a>
+            <a href="{{route('edit_profile')}}" class="">Edit Profile</a>
         </div>
     </div>
     <div class="row profile-details">

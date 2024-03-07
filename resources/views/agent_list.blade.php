@@ -1,7 +1,8 @@
- @include('partials/nav')
+@extends('layouts/nav_footer_layouts')
+
 
         
-
+@section('main_section')
     <div class="container-fluid">
         {{-- Search section --}}
         <div class="row search-section-agent justify-content-center">
@@ -74,13 +75,7 @@
             </div>
             
         </div>
-        {{-- bottom nav --}}
-        @include('partials/bottom_nav')
 
-        {{-- footer --}}
-        @include('partials/footer') 
 
     </div>
-    </body>
-    <script src="assets/bootstrap/js/bootstrap.js"></script>
-</html>
+@endsection
