@@ -1,7 +1,5 @@
 @include('partials/nav')
 
-    <div class="container-fluid">
-
 
         {{-- Search section --}}
         <div class="row search-section justify-content-center">
@@ -73,13 +71,13 @@
                 <h5 class="bold-purple mb-5 ps-5">Featured Properties</h5>
             </div>
             
-            <div class="col-md-5 col-lg-3 featured">
+            <div class="col-md-5 col-lg-3">
                 <img src="{{ asset('assets/images/hero4.jpg') }}" alt="properties" class="img-fluid">
             </div>
-            <div class="col-md-5 col-lg-3 featured">
+            <div class="col-md-5 col-lg-3">
                 <img src="{{ asset('assets/images/hero4.jpg') }}" alt="properties" class="img-fluid">
             </div>
-            <div class="col-md-5 col-lg-3 featured">
+            <div class="col-md-5 col-lg-3">
                 <img src="{{ asset('assets/images/hero4.jpg') }}" alt="properties" class="img-fluid">
             </div>
         </div>
@@ -87,8 +85,7 @@
         @include('partials/bottom_nav')
 
         {{-- footer --}}
-        @include('partials/footer')    
-    </div>
+        @include('partials/footer')
     </body>
     <script src="assets/bootstrap/js/bootstrap.js"></script>
 </html>

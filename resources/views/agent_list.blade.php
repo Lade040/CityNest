@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 @extends('layouts/nav_footer_layouts')
 
 
         
 @section('main_section')
     <div class="container-fluid">
+=======
+@include('partials/nav')
+
+
+>>>>>>> CityNest/vic_CityNest
         {{-- Search section --}}
         <div class="row search-section-agent justify-content-center">
 
@@ -36,46 +42,33 @@
         </div>
 
         <div class="row justify-content-center agent-section">
-            <div class="col-10 agent-div">
+            <div class="col-10">
                 <div class="row">
-                    <div class="col-5">
+                    <div class="col-2">
                         <img src="{{ asset('assets/images/hero4.jpg') }}" alt="properties" class="img-fluid">
-                        <div class="d-grid gap-2 col mx-auto mt-3">
-                            <a href="" class="btn custom-btn">View agent</a>
+                        <div>
+                            <a href="" class="btn ">View agent</a>
                         </div>
                     </div>
-                    <div class="col-5">
-                        <h3 class="bold">Agent's Name</h3>
+                    <div class="col-6">
+                        <h3>Agent Name</h3>
                         <p> Agent's address</p>
                         <p>Date registered</p>
-                        <p>Agent's contact</p>
                     </div>
-
-                </div>
-            </div>
-            <div class="col-10 agent-div">
-                <div class="row">
-                    <div class="col-5">
-                        <img src="{{ asset('assets/images/hero4.jpg') }}" alt="properties" class="img-fluid">
-                        <div class="d-grid gap-2 col mx-auto mt-3">
-                            <a href="" class="btn custom-btn">View agent</a>
-                        </div>
-                    </div>
-                    <div class="col-5">
-                        <h3 class="bold">Agent's Name</h3>
-                        <p> Agent's address</p>
-                        <p>Date registered</p>
-                        <p>Agent's contact</p>
-                    </div>
-
-                </div>
-            </div>
 
                 </div>
             </div>
             
         </div>
 
+<<<<<<< HEAD
 
     </div>
 @endsection
+=======
+        {{-- footer --}}
+        @include('partials/footer')
+    </body>
+    <script src="assets/bootstrap/js/bootstrap.js"></script>
+</html>
+>>>>>>> CityNest/vic_CityNest
