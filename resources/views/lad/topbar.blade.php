@@ -27,7 +27,7 @@
              <div class="logo_section">
                 <a href="index.html">
                     {{-- <img class="img-responsive" src="lad/assets/images/logo/logo.png" alt="#" /></a> --}}
-                 <h1 class="text-light mx-5 mt-3">CityNest</h1>
+                 <h1 class="text-light mx-5 mt-3 px-5">Landlord, Agent & Developer</h1>
              </div>
              <div class="right_topbar">
                 <div class="icon_info">
@@ -43,7 +43,7 @@
                             <a class="dropdown-item" href="profile.html">My Profile</a>
                             <a class="dropdown-item" href="settings.html">Settings</a>
                             <a class="dropdown-item" href="help.html">Help</a>
-                            <a class="dropdown-item" href="#"><span>Log Out</span> <i class="fa fa-sign-out"></i></a>
+                            <a class="dropdown-item" href="{{ route('logout') }}"><span>Log Out</span> <i class="fa fa-sign-out"></i></a>
                          </div>
                       </li>
                    </ul>
