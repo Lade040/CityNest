@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>LoafYou</title>
+    <title>CityNest</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="assets/fontawesome/css/all.css">
     <link rel="stylesheet" href="assets/css/main.css" type="text/css">
@@ -14,7 +14,7 @@
     <body class="padding-top">
         <div class="container-fluid nav-container">
             <!-- Navbar Section -->
-            
+
                     <nav class="navbar navbar-expand-lg bg-body-tertiary" >
                         <div class="container-fluid px-0">
                             <a class="navbar-brand ps-5" href="index.php"><i class="fa-solid fa-city"></i>&nbsp;CityNest</a>
@@ -39,17 +39,24 @@
                                         <a class="nav-link" href="shop.php">Post a Property</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ route('login')}}">Login</a>
+                                        {{-- <a class="nav-link" href="{{ route('login')}}">Login</a> --}}
+                                        <a class="nav-link" href="{{ route('redirects') }}">Login</a>
+                                        {{-- @if ($user_type != 1)
+                                            <a class="nav-link" href="{{ route('user-login') }}">User Login</a>
+                                        @elseif ($user_type == 1)
+                                            <a class="nav-link" href="{{ route('admin-login') }}">Admin Login</a>
+                                        @endif --}}
+
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="{{ route('register')}}">Sign Up</a>
                                     </li>
-                            
+
                                 </ul>
-                        
+
                             </div>
                         </div>
                   </nav>
 
-              
+
         </div>
